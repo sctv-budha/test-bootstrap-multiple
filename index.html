@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Webpack Test</title>
+    <title>Webpack and Multiple Selection Test</title>
     <link rel="stylesheet" href="./dist/main.css" type="text/css"/>
   <body>
     <div class="container-fluid">
-      <label>Checking jQuery imported or not</label>
-      <button type="button" class="btn btn-success" id="btn-tap">Tap</button>
+      <label for="multiple-optgroups">Multiple Selection</label>
+      <select class="form-control" id="multiple-optgroups" multiple='multiple'></select>
 
-      <form>
-        <div class="form-group">
-          <label for="multiple-optgroups">Multi Select</label>
-          <select class="form-control" id="multiple-optgroups" multiple='multiple'>
-          </select>
-        </div>
-        <div class="form-group">
-          <button type="button" id="btn-submit">Submit</button>
-        </div>
-      </form>
+      <label for="single-select">Single Selection</label>
+      <select class="form-control" id="single-select"></select>
     </div>
-    <script src='./dist/main.js'></script>
+    <script src='./dist/bundle.js'></script>
   </body>
 </html>

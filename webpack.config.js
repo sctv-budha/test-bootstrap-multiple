@@ -6,7 +6,7 @@ module.exports = {
 	mode: 'development',
 	entry: './src/index.js',
 	output: {
-		filename: 'main.js',
+		filename: 'bundle.js',
 		path: path.resolve(__dirname, 'dist'),
 	},
 	module: {
@@ -30,10 +30,5 @@ module.exports = {
 		new MiniCssExtractPlugin({
       filename: '[name].css',
     }),
-	],
-	resolve: {
-		alias: {
-			'bootstrap-multiselect': 'bootstrap-multiselect/dist/js/bootstrap-multiselect'
-		}
-	}
+	]
 };
